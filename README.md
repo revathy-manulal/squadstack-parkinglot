@@ -9,6 +9,9 @@ python -V
 
 ## Running Application
 - Download the code base and cd into the repo and use the below command to run the application
+```python
+cd squadstack-parkinglot
+```
 - The application expects to find the input file in the folder, refer to the location of file_inputs.txt, this is where the input files are 
 expected to be found
 ```python

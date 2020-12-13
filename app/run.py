@@ -1,4 +1,4 @@
-
+import sys
 from utils import create_parking_lot, park_car, leave_slot, \
 	get_slots_with_driver_age, get_slot_by_car_registration, \
 	get_vehical_regno_for_driver
@@ -25,10 +25,10 @@ def executeCommand(parkingLot, command):
 Read input command from file_inputs.txt
 and execute commands one by one
 """
-def main():
+def main(file_name):
 	parkingLot = None
 	try:
-		with open('file_inputs.txt') as file:
+		with open(file_name) as file:
 			commands = file.readlines()
 			for command in commands:
 				split_command = command.strip().split()
@@ -38,4 +38,5 @@ def main():
 		print(e)
 
 if __name__ == '__main__':
-	main()
+	if len(sys.argv) > 1:
+		main(sys.argv[1])

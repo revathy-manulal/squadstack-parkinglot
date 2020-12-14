@@ -1,5 +1,5 @@
 ## Requirements
-The app requires a python3. 
+The app requires a python3 (anything above 3.3). 
 
 - To check the python version on your system
 ```python
